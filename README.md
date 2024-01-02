@@ -16,18 +16,24 @@ Use len() method to get the number of rows and columns
 Print the output:
 ```
 ## PROGRAM:
-Developed by:T.Ajay
-Ref.no:212223230007
-
+# Program to read content from a CSV file using pandas.
+# Developed By : T.Ajay
+# Register Number : 212223230007
 import pandas as pd
-f=pd.read_csv("/content/nba (2).csv")
-print(f.head(10))
-print(f.tail())
-print('Row:',len(f.axes[0]))
-print('Col:',len(f.axes[1]))
+
+df = pd.read_csv(r"C:\Users\admin\Downloads\nba.csv")
+
+print("First 10 Rows:")
+print(df.head(10))
+
+print("\nLast 5 Rows:")
+print(df.tail())
+
+print("\nNumber of Columns:", len(df.axes[0]))
+print("Number of Rows:", len(df.axes[1]))
 ```
 ## OUTPUT:
-![image](https://github.com/Ajayreddy-2006/Read-from-CSV/assets/145742508/7ed3c11d-1fed-440d-be21-e71e28e4571f)
+![image](https://github.com/Ajayreddy-2006/Read-from-CSV/assets/145742508/9c882730-4559-43c3-ac37-5f80cbe3d9ba)
 
 ## RESULT:
 Thus a python program is written to read the contents of a CSV file.
